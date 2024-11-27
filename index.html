@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Montserrat:wght@100..900&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>To-Do List</h1>
+        <h2>My Study Routine</h2>
+      </div>
+      <div class="addTask">
+        <input type="text" placeholder="Add a new Task" id="inputTask" class="addTask"/>
+        <span>start time</span>
+        <input  type="time" name="time" id="startTime" min="7:00" max="18:00" >
+        <span>end time</span>
+        <input type="time" name="time" id="endTime" min="7:00" max="18:00" >
+        <button>Add Task</button>
+      </div>
+      <ul class="task-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
